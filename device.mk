@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
+# ANXCamera
+$(call inherit-product, vendor/ANXCamera/anx-vendor.mk)
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
