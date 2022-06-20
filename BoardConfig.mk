@@ -12,7 +12,6 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/courbet
 BUILD_BROKEN_DUP_RULES := true
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := courbet,courbetin
