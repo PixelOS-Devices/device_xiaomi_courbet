@@ -106,7 +106,6 @@ vendor/lib/camera/fdconfigvideolite.bin
 -vendor/lib/hw/camera.qcom.so
 -vendor/lib/hw/com.qti.chi.override.so
 -vendor/lib/libFaceGrade.so
--vendor/lib/libMegviiFacepp-0.5.2.so
 -vendor/lib/libVDClearShot.so
 -vendor/lib/libXMFD_AgeGender.so
 -vendor/lib/libcamera2ndk_vendor.so
@@ -120,7 +119,6 @@ vendor/lib/camera/fdconfigvideolite.bin
 -vendor/lib/libcapiv2svacnn.so
 -vendor/lib/libcapiv2vop.so
 -vendor/lib/libcom.qti.chinodeutils.so
--vendor/lib/libmegface.so
 -vendor/lib/libmialgo_fs.so
 -vendor/lib/libmialgo_rfs.so
 -vendor/lib/libmialgo_utils.so
@@ -218,7 +216,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/hw/camera.qcom.so
 -vendor/lib64/hw/com.qti.chi.override.so
 -vendor/lib64/libFaceGrade.so
--vendor/lib64/libMegviiFacepp-0.5.2.so
+-vendor/lib64/libMegviiFacepp-0.5.2.so;MODULE=libMegviiFacepp-0.5.2_vendor
 -vendor/lib64/libSNPE.so
 -vendor/lib64/libVDClearShot.so
 -vendor/lib64/libXMFD_AgeGender.so
@@ -258,7 +256,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libft2vendor.so
 -vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
--vendor/lib64/libmegface.so
+-vendor/lib64/libmegface.so;MODULE=libmegface.so_vendor
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmialgo_fs.so
 -vendor/lib64/libmialgo_ie_capture.so
@@ -267,7 +265,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libmialgo_utils.so
 -vendor/lib64/libmialgoengine.so
 -vendor/lib64/libmibokeh_712.so
--vendor/lib64/libmpbase.so
+-vendor/lib64/libmpbase.so;MODULE=libmpbase_vendor
 -vendor/lib64/libmulticam_image_optical_zoom.so
 -vendor/lib64/libmulticam_video_optical_zoom.so
 -vendor/lib64/librelight_only.so
@@ -294,9 +292,9 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libxmi_high_dynamic_range.so
 -vendor/lib64/libxml2_vendor.so
 vendor/lib64/mibokeh_712_opencl.bin
--vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
--vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
--vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
+-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so;MODULE=vendor.qti.hardware.camera.device@1.0_vendor
+-vendor/lib64/vendor.qti.hardware.camera.device@2.0.so;MODULE=vendor.qti.hardware.camera.device@2.0_vendor
+-vendor/lib64/vendor.qti.hardware.camera.device@3.5.so;MODULE=vendor.qti.hardware.camera.device@3.5_vendor
 
 # Camera-configs
 vendor/etc/camera/CFR_para_MARCO_V01.bin
