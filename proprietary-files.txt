@@ -16,7 +16,6 @@ vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6f
 -vendor/lib/libaudcal.so
 
 # Audio extensions
--vendor/lib/btaudio_offload_if.so
 -vendor/lib/liba2dpoffload.so
 -vendor/lib/libhdmiedid.so
 -vendor/lib/libhfp.so
@@ -129,7 +128,6 @@ vendor/lib/camera/fdconfigvideolite.bin
 -vendor/lib/libsnsapi.so
 -vendor/lib/libsnsdiaglog.so
 -vendor/lib/libswregistrationalgo.so
--vendor/lib/libswvdec.so
 -vendor/lib/libvideoutils.so
 vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.altek.node.depurple.so
