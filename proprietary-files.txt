@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Mi 11 Lite 4G (codenamed `courbet`) V13.0.8.0.SKQMIXM, unless pinned
+# These proprietary files are extracted from Mi 11 Lite 4G (codenamed `courbet`) V13.0.6.0.SKQEUXM, unless pinned
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -18,6 +18,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 -vendor/lib/libaudcal.so
 
 # Audio extensions
+-vendor/lib/btaudio_offload_if.so
 -vendor/lib/liba2dpoffload.so
 -vendor/lib/libhdmiedid.so
 -vendor/lib/libhfp.so
@@ -254,7 +255,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libdualcam_optical_zoom_control.so
 -vendor/lib64/libdualcam_video_optical_zoom.so
 -vendor/lib64/libft2vendor.so
--vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
 -vendor/lib64/libmegface.so;MODULE=libmegface.so_vendor
 -vendor/lib64/libmiai_portraitsupernight.so
