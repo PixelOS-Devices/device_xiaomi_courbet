@@ -10,9 +10,6 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
-# Inherit from ANXCamera vendor
-include vendor/ANXCamera/BoardConfigAnx.mk
-
 DEVICE_PATH := device/xiaomi/courbet
 BUILD_BROKEN_DUP_RULES := true
 
