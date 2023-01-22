@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_courbet.mk
+    $(LOCAL_DIR)/aosp_courbet.mk
