@@ -7,11 +7,12 @@
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/courbet-miuicamera/products/board.mk
+-include vendor/xiaomi/sweet-miuicamera/products/board.mk
 
 DEVICE_PATH := device/xiaomi/courbet
 BUILD_BROKEN_DUP_RULES := true
@@ -34,6 +35,25 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # Kernel
 TARGET_KERNEL_CONFIG := courbet_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r487747c
+
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += loop.max_part=7
+
+# Enable DTB in bootimage and set header version (Remove it from sm6150-common BoardConfigCommon.mk)
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
